@@ -21,7 +21,7 @@
         <div class="flex items-center justify-between">
             <!-- Logo -->
             <a href="index.html" class="items-center mx-auto md:mx-0">
-            <img src="/logo-without-text-inverse-329856.svg" alt="Logo" class="h-[60px] w-auto"></a>
+            <img src="./logo-without-text-inverse-329856.svg" alt="Logo" class="h-[60px] w-auto"></a>
 
             <!-- Main menu -->
             <ul id="main-menu" class="hidden md:flex md:items-center">
@@ -124,11 +124,11 @@
     </nav>
 
     <!-- Slider Section -->
-    <div class="flex h-[45vh] md:h-screen justify-items-start w-full overflow-hidden m-0 p-0">
+    <div class="flex h-[200px] md:h-screen justify-items-start w-full overflow-hidden m-0 p-0">
         <!-- 1slider -->
         <div class="relative flex-1 cursor-pointer transition-all duration-700 ease-out hover:flex-[4] group">
-            <img src="/slider1.webp"
-                alt="Luxury"
+            <img src="./slider1.webp"
+                alt="Classic"
                 class="w-full h-[45vh] md:h-full object-cover object-left transition-transform duration-700 ease-out origin-left saturate-[0.8] scale-105 group-hover:brightness-100 group-hover:saturate-120 group-hover:scale-100 m-0 p-0">
             <div class="absolute bottom-0 left-0 bg-black/70 text-white px-2 md:px-4 py-1 md:py-2 tracking-widest uppercase text-[10px] md:text-sm font-semibold rotate-180 [writing-mode:vertical-rl] transition-opacity duration-500 opacity-100 group-hover:opacity-0">
                 classic
@@ -137,7 +137,7 @@
 
         <!-- 2slider -->
         <div class="relative flex-1 cursor-pointer transition-all duration-700 ease-out hover:flex-[4] group">
-            <img src="/slider2.webp"
+            <img src="./slider2.webp"
                 alt="Luxury"
                 class="w-full h-[45vh] md:h-full object-cover object-left transition-transform duration-700 ease-out origin-left saturate-[0.8] scale-105 group-hover:brightness-100 group-hover:saturate-120 group-hover:scale-100 m-0 p-0">
             <div class="absolute bottom-0 left-0 bg-black/70 text-white px-2 md:px-4 py-1 md:py-2 tracking-widest uppercase text-[10px] md:text-sm font-semibold rotate-180 [writing-mode:vertical-rl] transition-opacity duration-500 opacity-100 group-hover:opacity-0">
@@ -147,25 +147,24 @@
 
         <!-- 3slider -->
         <div class="relative flex-1 cursor-pointer transition-all duration-700 ease-out hover:flex-[4] group">
-            <img src="/slider3.webp"
-                alt="Luxury"
+            <img src="./slider3.webp"
+                alt="Wellness Communities"
                 class="w-full h-[45vh] md:h-full object-cover object-left transition-transform duration-700 ease-out origin-left saturate-[0.8] scale-105 group-hover:brightness-100 group-hover:saturate-120 group-hover:scale-100 m-0 p-0">
             <div class="absolute bottom-0 left-0 bg-black/70 text-white px-2 md:px-4 py-1 md:py-2 tracking-widest uppercase text-[10px] md:text-sm font-semibold rotate-180 [writing-mode:vertical-rl] transition-opacity duration-500 opacity-100 group-hover:opacity-0">
                 Wellness Communities
             </div>
         </div>
 
-        <!-- 4slider (hidden on mobile) -->
-        <div class="relative flex-1 cursor-pointer transition-all duration-700 ease-out hover:flex-[4] group">
-            <img src="/slider4.webp"
-                alt="Luxury"
+        <!-- 4slider (hidden on mobile, visible on md+) -->
+        <div class="relative flex-1 cursor-pointer transition-all duration-700 ease-out hover:flex-[4] group hidden md:block">
+            <img src="./slider4.webp"
+                alt="Commercial"
                 class="w-full h-[45vh] md:h-full object-cover object-left transition-transform duration-700 ease-out origin-left saturate-[0.8] scale-105 group-hover:brightness-100 group-hover:saturate-120 group-hover:scale-100 m-0 p-0">
             <div class="absolute bottom-0 left-0 bg-black/70 text-white px-2 md:px-4 py-1 md:py-2 tracking-widest uppercase text-[10px] md:text-sm font-semibold rotate-180 [writing-mode:vertical-rl] transition-opacity duration-500 opacity-100 group-hover:opacity-0">
                 Commercial
             </div>
         </div>
     </div>
- 
     <!-- end slider section -->
 
     <!-- text slider play -->
@@ -198,7 +197,7 @@
     </div>
 
     <!-- ABOUT BTI SECTION -->
-    <section class="py-12 px-12">
+    <section class="md:py-12 py-6 md:px-12 px-6">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <!-- Left Column: Text Content -->
             <div>
@@ -229,7 +228,7 @@
     <!-- end about bti section -->
 
     <!-- LANDOWNER SECTION -->
-    <section class=" py-12">
+    <section class="py-12">
         <div class="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-12">
             <!-- Left Content -->
             <div class="lg:w-1/2">
@@ -247,12 +246,17 @@
                 </button>
             </div>
             <!-- Right Content (Video/Image) -->
-            <div class="lg:w-1/2 relative">
+            <div class="lg:w-1/2 relative group">
                 <img src="/slider4.webp" alt="BTI Video" class="shadow-lg">
+
                 <div class="absolute inset-0 flex justify-center items-center">
                     <button class="bg-black bg-opacity-50 p-4 rounded-full hover:bg-opacity-70 transition">
-                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z"/>
+                    <svg
+                        class="w-8 h-8 text-white transform transition-transform duration-[1500ms] ease-linear group-hover:animate-spin-slow"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path d="M8 5v14l11-7z" />
                     </svg>
                     </button>
                 </div>
@@ -417,7 +421,7 @@
         </div>
     </section>
     
-    <div class="relative bg-cover bg-center bg-no-repeat h-screen max-w-7xl mx-auto flex items-center justify-center" style="background-image: url('/home-full.jpg')">
+    <div class="relative bg-cover bg-center bg-no-repeat md:h-screen max-w-7xl mx-auto flex items-center justify-center" style="background-image: url('/home-full.jpg')">
         <div class="relative z-10 bg-black/40 text-white p-6 md:p-8 md:w-[70%] text-center md:text-center">
             <p class="text-sm md:text-xl font-semibold  mb-4">
                 Our dedication to our customers, the strength of architectural and construction in-house teams, and an ever-evolving corporate culture make us exemplary leaders in the private housing sector.
